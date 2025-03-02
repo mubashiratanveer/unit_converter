@@ -85,7 +85,7 @@ def length_conversion(value, from_unit, to_unit):
         'meters': 1, 'kilometers': 0.001, 'miles': 0.000621371, 'Feet': 3.28, 'yards': 1.0936, 'inches': 12,
         'centimeters': 100, 'millimeters': 1000
     }
-    return (value / length_units[from_unit.lower()]) * length_units[to_unit.lower()]
+    return (value / length_units[from_unit]) * length_units[to_unit]
 
 def weight_conversion(value, from_unit, to_unit):
     weight_units = {
